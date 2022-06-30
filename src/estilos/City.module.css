@@ -1,0 +1,28 @@
+.ciudad{
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.185);
+    box-shadow: 0 4px 30px rgb(0, 0, 0);
+    backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: 780px;
+    margin-top: 140px;
+    border-radius: 20px;
+}
+.ciudad:hover{
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.205);
+    color: rgba(35, 133, 163, 0.801);
+    background: rgba(255, 255, 255, 0.835);
+    box-shadow: 0 4px 30px rgba(35, 133, 163, 0.801);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    width: 400px;
+    transform: scale(1.02);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 780px;
+    margin-top: 140px;
+}
