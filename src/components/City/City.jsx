@@ -1,5 +1,5 @@
 import React from "react"
-import CityStyles from "../estilos/City.module.css";
+import CityStyles from "./City.module.scss";
 
 export default function City({city}){
     return(

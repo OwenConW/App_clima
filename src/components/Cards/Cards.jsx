@@ -1,11 +1,11 @@
 import React from 'react';
-import Card from "./Card.jsx"
-import estilo from "../estilos/Card.module.css"
+import Card from "../Card/Card"
+import s from "../Card/Card.module.scss"
 
 export default function Cards({cities, onClose}) {
   if(cities.length !== 0){
     return (
-      <div className='cards'>
+      <div className={s.cards}>
         {cities.map((city, index) => {
           return (<Card key={index}
             id={city.id}
@@ -19,7 +19,7 @@ export default function Cards({cities, onClose}) {
     );
   } else {
     return(
-      <div className={estilo.sinciudades}>Sin ciudades</div>
+      <div className={s.sinciudades}>- No cities to show -</div>
     )
   }
 };

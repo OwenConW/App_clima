@@ -1,5 +1,26 @@
+.AppDay{
+  font-family: 'Jost', sans-serif;
+  background: url("https://img.freepik.com/vector-gratis/paisaje-marino-congelado-artico-superficie-plana-hielo_107791-12051.jpg?w=1800&t=st=1662745446~exp=1662746046~hmac=f58c72c75e5d35e7f4c77339b93affab67c5158c9cdceccf2591bf9750b7843b") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.AppNight{
+  font-family: 'Jost', sans-serif;
+  background: url("https://img.freepik.com/vector-gratis/noche-bosque_1308-69877.jpg?w=1380&t=st=1662749090~exp=1662749690~hmac=be2748f5421be9985b87ebfc99b08d6e6e8d3e0f796a0c59ed2e1fc94ab0b256") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.30437685328037467) 0%, rgba(0,0,0,0.6293068252691701) 57%, rgba(0,0,0,0.7637606067817753) 79%, rgba(0,0,0,1) 100%);
+  min-height: 100vh;
 }
 
 .row {

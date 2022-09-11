@@ -1,33 +1,10 @@
-body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url(https://wallpaperstock.net/light-blue-nubes-minimalista-wallpapers_34320_1920x1200.jpg);
-    font-size: 200%;
-    text-align: center;
-}
-a{
-    text-decoration: none;
-    color: black;
-    font-size: xx-large;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-a:hover{
-    text-decoration: none;
-    color: black;
-}
-a h2{
-    margin-top: 10px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-left: 680px;
-    margin-right: 0px;
-    font-size:x-large
+html{
+    font-family: 'Jost', sans-serif;
+    background-image: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
-div .Nav_titulo_3aqKg{
-    display: inline-block;
-    padding: 0px;
-    height: 100px
-}
+/* // background: rgb(111,149,227);
+// background: linear-gradient(0deg, rgba(111,149,227,1) 0%, rgba(56,75,113,1) 64%, rgba(36,48,73,1) 78%, rgba(0,0,0,1) 100%); */

@@ -1,16 +1,18 @@
 import React, {useState} from 'react';
 import './App.css';
-import Nav from "./components/Nav.jsx"
-import Cards from './components/Cards.jsx';
 import estilosGlobales from "./global/global.css"
 import {Switch, Route} from "react-router-dom"
-import City from "./components/City.jsx"
-import About from "./components/About.jsx"
-
+import Nav from "./components/Nav/Nav.jsx"
+import Cards from './components/Cards/Cards.jsx';
+import City from "./components/City/City.jsx"
+import About from "./components/About/About.jsx"
+import { useSelector } from "react-redux"
 
 
 function App() {
   
+  const modeNight = useSelector(state => state.mode)
+
   const [cities, setCities] = useState([])
 
   function onClose(id) {
@@ -33,8 +35,8 @@ function App() {
       .then((recurso) => {
         if(recurso.main !== undefined){
           const ciudad = {
-            min: Math.floor(recurso.main.temp_min),
-            max: Math.ceil(recurso.main.temp_max),
+            min: Math.floor(recurso.main.temp_min) - 283,
+            max: Math.ceil(recurso.main.temp_max) - 277,
             img: recurso.weather[0].icon,
             id: recurso.id,
             wind: recurso.wind.speed,
@@ -65,7 +67,8 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className={modeNight ? "AppNight" : "AppDay"}>
+        <div className="App">
       <Route path="/">
         <Nav onSearch={onSearch}></Nav>
       </Route>
@@ -80,6 +83,7 @@ function App() {
           {({match}) => <City city={onFilter(match.params.ciudadId)}></City>}
         </Route>
       </Switch>
+    </div>
     </div>
   );
 }

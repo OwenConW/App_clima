@@ -1,0 +1,199 @@
+.cards{  
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .divCardNight{
+
+        margin-top: 26px;
+        border-radius: 20px;
+        width: 400px;
+        height: 500px;
+        max-width: 400px;
+        max-height: 500px;
+        background: rgb(189,189,189);
+        background: linear-gradient(0deg, rgba(189,189,189,0.73) 0%, rgba(124,124,124,0.73) 25%, rgba(76,76,94,0.73) 44%, rgba(37,36,74,0.73) 68%, rgba(1,0,36,0.73) 100%);
+        box-shadow: 1px 2px 18px -1px rgba(255,255,255,0.75);
+        -webkit-box-shadow: 1px 2px 18px -1px rgba(255,255,255,0.75);
+        -moz-box-shadow: 1px 2px 18px -1px rgba(255,255,255,0.75);
+        overflow: hidden;
+        transition: 0.5s ease;
+        &:hover{
+            transition: 0.5s ease;
+            transform: scale(1.03);
+        }
+
+        .contenedorButton{
+
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            .buttonx{
+
+                border-radius: 40%;
+                margin-top: 5px;
+                margin-right: 5px;
+                width: 25px;
+                height: 25px;
+                align-self: flex-end;
+                border: none;   
+                cursor: pointer;
+                opacity: 0.7;    
+                transition: 0.5s ease;
+                &:hover{
+                    opacity: 1; 
+                    transition: 0.5s ease;   
+                }
+            }
+        }
+        .Link{
+
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+            }
+
+            
+            .h1Name{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 3rem;
+                .pin{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+        }
+        .imgCard{
+            width: 160px;
+            height: 160px;
+            background-color: rgba(0, 0, 0, 0.205);
+            border-radius: 50%;
+        }
+
+        .divCardH4{
+            display: flex;
+            justify-content: space-around;
+            height: 43%;
+            align-items: center;
+            .iconTer{
+                width: 37px;
+                height: 37px;
+            }
+            .h4Card{
+                margin-left: 2px;
+                font-size: 1.9rem;
+                color: white;
+            }
+
+        }
+
+    }
+
+
+    .divCard{
+
+        margin-top: 26px;
+        border-radius: 20px;
+        width: 400px;
+        height: 500px;
+        max-width: 400px;
+        max-height: 500px;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.486) 0%, rgba(185, 185, 185, 0.445) 36%, rgba(255, 255, 255, 0.438) 54%, rgba(253, 254, 255, 0.486) 100%);
+        box-shadow: -1px -1px 19px 9px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -1px -1px 19px 9px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px -1px 19px 9px rgba(0,0,0,0.75);
+        overflow: hidden;
+        transition: 0.5s ease;
+        &:hover{
+            transition: 0.5s ease;
+            transform: scale(1.03);
+        }
+
+        .contenedorButton{
+
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            .buttonx{
+
+                border-radius: 40%;
+                margin-top: 5px;
+                margin-right: 5px;
+                width: 25px;
+                height: 25px;
+                align-self: flex-end;
+                border: none;   
+                cursor: pointer;
+                opacity: 0.7;    
+                transition: 0.5s ease;
+                &:hover{
+                    opacity: 1; 
+                    transition: 0.5s ease;   
+                }
+            }
+        }
+        .Link{
+
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+            }
+
+            
+            .h1Name{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 3rem;
+                .pin{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+        }
+        .imgCard{
+            width: 160px;
+            height: 160px;
+            background-color: rgba(0, 0, 0, 0.205);
+            border-radius: 50%;
+        }
+
+        .divCardH4{
+            display: flex;
+            justify-content: space-around;
+            height: 43%;
+            align-items: center;
+            .iconTer{
+                width: 37px;
+                height: 37px;
+            }
+            .h4Card{
+                margin-left: 2px;
+                font-size: 1.9rem;
+                color: white;
+            }
+
+        }
+
+    }
+
+}
+
+.sinciudades{
+    display: flex;
+    font-size: 3rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
