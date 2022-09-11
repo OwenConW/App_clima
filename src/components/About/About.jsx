@@ -41,7 +41,7 @@ function About(){
         <b> </b>
         <b> </b>
         <b> </b>
-        <b className={estilos.b12}><a download="Curriculum" href="./assets/CurriculumOwen.pdf">{`>>>>>>>>>>>>> CLICK HERE <<<<<<<<<<<<<<`}</a></b>
+        <b className={estilos.b12}><a download="Curriculum" href="CurriculumOwen.pdf">{`>>>>>>>>>>>>> CLICK HERE <<<<<<<<<<<<<<`}</a></b>
         <b> </b>
         <b> </b>
         <b> </b>
