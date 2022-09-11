@@ -7,7 +7,7 @@ import Cards from './components/Cards/Cards.jsx';
 import City from "./components/City/City.jsx"
 import About from "./components/About/About.jsx"
 import { useSelector } from "react-redux"
-
+import Swal from 'sweetalert2'
 
 function App() {
   
@@ -49,11 +49,19 @@ function App() {
           };
           setCities(cities => [...cities, ciudad]);
         } else {
-          alert(`No se encontro a ${ciudad}`);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `No se pudo encontrar a ${ciudad[0].toUpperCase() + ciudad.substring(1)}`,
+          })
         }
       });
     }else{
-      alert(`${ciudad.toUpperCase()} ya se encuentra en pantalla!`)
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: `${ciudad[0].toUpperCase() + ciudad.substring(1)} ya se encuentra en pantalla`,
+    })
     }
   }
 
