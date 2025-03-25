@@ -37,11 +37,6 @@ function About(){
         <b> </b>
         <b className={estilos.b10}>{`> https://porfolio-owenbonoris.vercel.app/`}</b>
         <b> </b>
-        <b className={estilos.b11}>{`> And finally you can download my CV...`}</b>
-        <b> </b>
-        <b> </b>
-        <b> </b>
-        <b className={estilos.b12}><a download="Curriculum" href="CurriculumOwen.pdf">{`>>>>>>>>>>>>> CLICK HERE <<<<<<<<<<<<<<`}</a></b>
         <b> </b>
         <b> </b>
         <b> </b>
